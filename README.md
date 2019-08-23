@@ -1,11 +1,11 @@
-# [nq-tslib-base](https://github.com/nqdy666/nq-tslib-base)
-[![](https://img.shields.io/badge/Powered%20by-jslib%20base-brightgreen.svg)](https://github.com/nqdy666/nq-tslib-base)
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/nqdy666/nq-tslib-base/blob/master/LICENSE)
-[![Build Status](https://travis-ci.org/nqdy666/nq-tslib-base.svg?branch=master)](https://travis-ci.org/nqdy666/nq-tslib-base)
-[![Coveralls](https://img.shields.io/coveralls/nqdy666/nq-tslib-base.svg)](https://coveralls.io/github/nqdy666/nq-tslib-base)
-[![npm](https://img.shields.io/badge/npm-0.1.0-orange.svg)](https://www.npmjs.com/package/nq-tslib-base)
-[![NPM downloads](http://img.shields.io/npm/dm/nq-tslib-base.svg?style=flat-square)](http://www.npmtrends.com/nq-tslib-base)
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/nqdy666/nq-tslib-base.svg)](http://isitmaintained.com/project/nqdy666/nq-tslib-base "Percentage of issues still open")
+# [vve-rjyr-utils](https://github.com/vue-viewer-editor/vve-rjyr-utils)
+[![](https://img.shields.io/badge/Powered%20by-jslib%20base-brightgreen.svg)](https://github.com/vue-viewer-editor/vve-rjyr-utils)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/vue-viewer-editor/vve-rjyr-utils/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/vue-viewer-editor/vve-rjyr-utils.svg?branch=master)](https://travis-ci.org/vue-viewer-editor/vve-rjyr-utils)
+[![Coveralls](https://img.shields.io/coveralls/vue-viewer-editor/vve-rjyr-utils.svg)](https://coveralls.io/github/vue-viewer-editor/vve-rjyr-utils)
+[![npm](https://img.shields.io/badge/npm-0.1.0-orange.svg)](https://www.npmjs.com/package/vve-rjyr-utils)
+[![NPM downloads](http://img.shields.io/npm/dm/vve-rjyr-utils.svg?style=flat-square)](http://www.npmtrends.com/vve-rjyr-utils)
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/vue-viewer-editor/vve-rjyr-utils.svg)](http://isitmaintained.com/project/vue-viewer-editor/vve-rjyr-utils "Percentage of issues still open")
 
 简体中文 | [English](./README.en.md)
 
@@ -59,20 +59,20 @@
 通过npm下载安装代码
 
 ```bash
-$ npm install --save nq-tslib-base
+$ npm install --save vve-rjyr-utils
 ```
 
 如果你是node环境
 
 ```js
-const QuickApp = require('nq-tslib-base');
+const QuickApp = require('vve-rjyr-utils');
 
 ```
 
 如果你是webpack等环境
 
 ```js
-import QuickApp from 'nq-tslib-base';
+import QuickApp from 'vve-rjyr-utils';
 ```
 
 如果你是requirejs环境
@@ -83,7 +83,7 @@ import QuickApp from 'nq-tslib-base';
 如果你是浏览器环境
 
 ```html
-<script src="node_modules/nq-tslib-base/dist/nq-tslib-base.min.js"></script>
+<script src="node_modules/vve-rjyr-utils/dist/vve-rjyr-utils.min.js"></script>
 ```
 
 ## :bookmark_tabs: 文档
@@ -133,7 +133,7 @@ $ npm publish
 
 ## 贡献者列表
 
-[contributors](https://github.com/nqdy666/nq-tslib-base/graphs/contributors)
+[contributors](https://github.com/vue-viewer-editor/vve-rjyr-utils/graphs/contributors)
 
 ## :gear: 更新日志
 [CHANGELOG.md](./CHANGELOG.md)

@@ -2,11 +2,11 @@ var path = require('path');
 var { camelCase } = require('lodash')
 var cdkit = require('cdkit');
 
-var fromLibName = 'nq-jslib-base';
-var toLibName = 'nq-tslib-base';
+var fromLibName = 'nq-tslib-base';
+var toLibName = 'vve-rjyr-utils';
 
-var formAuthorName = 'nianqin';
-var toAuthorName = 'nqdy666';
+var formAuthorName = 'nqdy666';
+var toAuthorName = 'vue-viewer-editor';
 
 
 function getFullPath(filename) {

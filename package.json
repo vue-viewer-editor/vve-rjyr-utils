@@ -1,5 +1,5 @@
 {
-  "name": "nq-tslib-base",
+  "name": "vve-rjyr-utils",
   "version": "0.0.9",
   "description": "A modern Typescript library scaffolding",
   "main": "dist/index.js",
@@ -33,14 +33,14 @@
     "release:only": "git commit -am %npm_package_version% && git tag %npm_package_version% && git push && git push --tags && echo 'i Run `npm publish` to publish'",
     "release": "npm test && npm run build && npm run release:only"
   },
-  "author": "nqdy666",
+  "author": "vue-viewer-editor",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nqdy666/nq-tslib-base"
+    "url": "https://github.com/vue-viewer-editor/vve-rjyr-utils"
   },
   "bugs": {
-    "url": "https://github.com/nqdy666/nq-tslib-base/issues"
+    "url": "https://github.com/vue-viewer-editor/vve-rjyr-utils/issues"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",

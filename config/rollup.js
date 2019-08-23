@@ -2,19 +2,19 @@ var typescript = require('rollup-plugin-typescript2');
 var babel = require('rollup-plugin-babel');
 var pkg = require('../package.json');
 
-// compatible with nq-tslib-base and @nqdy666/nq-tslib-base
-// @nqdy666/nq-tslib-base -> nq-tslib-base
+// compatible with vve-rjyr-utils and @vue-viewer-editor/vve-rjyr-utils
+// @vue-viewer-editor/vve-rjyr-utils -> vve-rjyr-utils
 var name = pkg.name.split('/').pop();
-// @nqdy666/nq-tslib-base -> nqdy666_nq-tslib-base
+// @vue-viewer-editor/vve-rjyr-utils -> vue-viewer-editor_vve-rjyr-utils
 // var name = pkg.name.replace('@', '').replace(/\//g, '_');
 var version = pkg.version;
 
 var banner =
   `/*!
- * ${pkg.name} ${version} (https://github.com/nqdy666/nq-tslib-base)
- * API https://github.com/nqdy666/nq-tslib-base/blob/master/doc/api.md
- * Copyright 2019-${(new Date).getFullYear()} nqdy666. All Rights Reserved
- * Licensed under MIT (https://github.com/nqdy666/nq-tslib-base/blob/master/LICENSE)
+ * ${pkg.name} ${version} (https://github.com/vue-viewer-editor/vve-rjyr-utils)
+ * API https://github.com/vue-viewer-editor/vve-rjyr-utils/blob/master/doc/api.md
+ * Copyright 2019-${(new Date).getFullYear()} vue-viewer-editor. All Rights Reserved
+ * Licensed under MIT (https://github.com/vue-viewer-editor/vve-rjyr-utils/blob/master/LICENSE)
  */
 `;
 
