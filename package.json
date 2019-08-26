@@ -76,6 +76,7 @@
     "typescript": "^3.5.3"
   },
   "dependencies": {
-    "@babel/runtime": "^7.5.5"
+    "@babel/runtime": "^7.5.5",
+    "js-cookie": "^2.2.1"
   }
 }
