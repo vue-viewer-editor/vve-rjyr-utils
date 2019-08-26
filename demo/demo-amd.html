@@ -12,8 +12,20 @@
 
   <script src='./js/require.js'></script>
   <script>
+        function check(flag) {
+      if (!flag) {
+        console.log('不符合规范')
+      } else {
+        console.log('符合规范')
+      }
+    }
+
     requirejs(['../dist/vve-rjyr-utils.js'], function (vveRjyrUtils) {
       document.write(vveRjyrUtils.add(1, 1))
+      document.write(check(vveRjyrUtils.ipCheck('172.30.81.82')))
+      document.write(check(vveRjyrUtils.macCheck('54-BF-64-5C-E8-5F')))
+      document.write(check(vveRjyrUtils.maskCheck('255.255.255.0')))
+      document.write(check(vveRjyrUtils.wlanCheck('锐捷ruijie123')))
     })
   </script>
 </body>
