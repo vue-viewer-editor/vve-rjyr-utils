@@ -1,6 +1,7 @@
 // rollup.config.js
 // ES output
 var common = require('./rollup.js');
+var commonjs = require('rollup-plugin-commonjs');
 var uglify = require('rollup-plugin-uglify');
 
 var prod = process.env.NODE_ENV === 'production';
@@ -15,6 +16,9 @@ module.exports = {
         banner: prod ? '' : common.banner,
     },
     plugins: [
+        commonjs({
+            include: 'node_modules/**',
+        }),
         common.getCompiler(),
         // https://github.com/mishoo/UglifyJS2#note
         // uglify-js only supports JavaScript (ECMAScript 5).

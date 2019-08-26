@@ -1,6 +1,7 @@
 // rollup.config.js
 // commonjs
 var common = require('./rollup.js');
+var commonjs = require('rollup-plugin-commonjs');
 var uglify = require('rollup-plugin-uglify');
 
 var prod = process.env.NODE_ENV === 'production';
@@ -15,6 +16,9 @@ module.exports = {
         banner: prod ? '' : common.banner,
     },
     plugins: [
+        commonjs({
+            include: 'node_modules/**',
+        }),
         common.getCompiler({
             tsconfigOverride: { compilerOptions : { declaration: true, module: 'ES2015' } },
             useTsconfigDeclarationDir: true
