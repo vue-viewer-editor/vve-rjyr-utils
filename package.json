@@ -3,7 +3,7 @@
   "version": "0.0.9",
   "description": "A modern Typescript library scaffolding",
   "main": "dist/index.js",
-  "types": "index.d.ts",
+  "types": "types/index.d.ts",
   "jsnext:main": "es/index.js",
   "module": "lib/index.js",
   "files": [
@@ -11,7 +11,7 @@
     "dist",
     "lib",
     "es",
-    "index.d.ts"
+    "types"
   ],
   "sideEffects": false,
   "srctype": "ts",
