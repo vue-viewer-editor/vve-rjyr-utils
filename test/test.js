@@ -6,10 +6,9 @@ var macCheck = require('../src/macCheck.ts')
 var ipCheck = require('../src/ipCheck.ts')
 var maskCheck = require('../src/maskCheck.ts')
 var wlanCheck = require('../src/wlanCheck.ts')
-// var CookieProcess = require('../src/cookieProcess.js')
+var CookieProcess = require('../src/cookieProcess.ts')
 
 describe('单元测试', function () {
-  this.timeout(1000);
   //mac
   describe('测试 mac 地址是否合法', function () {
     it('mac 地址正确', function () {
@@ -47,6 +46,13 @@ describe('单元测试', function () {
     });
     it('含中文', function () {
       expect(wlanCheck.wlanCheck('锐捷ruijie123')).to.equal(false)
+    });
+  });
+  // 测试 cookie
+  describe('测试 cookie', function () {
+    it('设置cookie', function () {
+      CookieProcess.setCookie('name', 'cookie')
+      expect(CookieProcess.getCookie('name')).to.equal('cookie')
     });
   });
 });

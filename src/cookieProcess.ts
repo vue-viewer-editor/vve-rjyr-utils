@@ -6,12 +6,8 @@ export function setCookie(name: string, value: string, obj?: object): void {
 }
 
 //读取cookie
-export function getCookie(name?: string): object {
-  if(name) {
-    return Cookies.get(name)
-  } else {
-    return Cookies.get()
-  }
+export function getCookie(name?: string): string | undefined {
+  return Cookies.get(name)
 }
 
 //删除cookie
