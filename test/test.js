@@ -1,4 +1,5 @@
 var expect = require('expect.js');
+require('jsdom-global')() // for cookie
 
 // ts 测试编译后文件
 var base = require('../src/index.ts');
