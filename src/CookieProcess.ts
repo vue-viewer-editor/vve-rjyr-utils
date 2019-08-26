@@ -1,21 +1,20 @@
-const Cookies = require('js-cookie')
+import Cookies from 'js-cookie'
 
 //创建一个在整个网站上有效的Cookie
-export function setCookie(name: string, value: string): void {
-  Cookies.set(name, value)
-}
-
-//创建一个从现在起7天后过期的cookie，在整个站点上有效
-export function setEffectiveCookie(name: string, value: string): void {
-  Cookies.set(name, value, { expires: 7 })
+export function setCookie(name: string, value: string, obj?: object): void {
+  Cookies.set(name, value, obj)
 }
 
 //读取cookie
-export function getCookie(name: string): string {
-  return Cookies.get(name)
+export function getCookie(name?: string): object {
+  if(name) {
+    return Cookies.get(name)
+  } else {
+    return Cookies.get()
+  }
 }
 
-//读取全部 cookie
-export function getAllCookie(): string {
-  return Cookies.get()
+//删除cookie
+export function removeCookie(name: string): void {
+  Cookies.remove(name)
 }

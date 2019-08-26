@@ -1,4 +1,5 @@
-// plus a + b
-export function add (a: number, b: number): number {
-  return a + b
-}
+export { ipCheck } from './ipCheck'
+export { macCheck } from './macCheck'
+export { maskCheck } from './maskCheck'
+export { wlanCheck } from './wlanCheck'
+export { setCookie, getCookie, removeCookie } from './cookieProcess'

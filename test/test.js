@@ -2,20 +2,14 @@ var expect = require('expect.js');
 
 // ts 测试编译后文件
 var base = require('../src/index.ts');
-var MacCheck = require('../src/MacCheck.ts')
-var IpCheck = require('../src/IpCheck.ts')
-var MaskCheck = require('../src/MaskCheck.ts')
-var WlanCheck = require('../src/WlanCheck.ts')
-var CookieProcess = require('../src/CookieProcess.js')
+var MacCheck = require('../src/macCheck.ts')
+var IpCheck = require('../src/ipCheck.ts')
+var MaskCheck = require('../src/maskCheck.ts')
+var WlanCheck = require('../src/wlanCheck.ts')
+// var CookieProcess = require('../src/cookieProcess.js')
 
 describe('单元测试', function () {
   this.timeout(1000);
-
-  describe('功能1', function () {
-    it('相等', function () {
-      expect(base.add(1, 1)).to.equal(2);
-    });
-  });
   //mac
   describe('测试 mac 地址是否合法', function () {
     it('mac 地址正确', function () {
@@ -49,17 +43,17 @@ describe('单元测试', function () {
   //wlan 是否含有中文
   describe('测试 wlan 是否含有中文', function () {
     it('不含中文', function () {
-      expect(WlanCheck.wlanCheck('ruijie')).to.equal(false)
+      expect(WlanCheck.wlanCheck('ruijie')).to.equal(true)
     });
     it('含中文', function () {
-      expect(WlanCheck.wlanCheck('锐捷ruijie123')).to.equal(true)
+      expect(WlanCheck.wlanCheck('锐捷ruijie123')).to.equal(false)
     });
   });
 });
 
-CookieProcess.setCookie('name', 'value')
-CookieProcess.setCookie('name2', 'value2')
-CookieProcess.setCookie('name3', 'value3')
-CookieProcess.setCookie('name4', 'value4')
+// CookieProcess.setCookie('name', 'value')
+// CookieProcess.setCookie('name2', 'value2')
+// CookieProcess.setCookie('name3', 'value3')
+// CookieProcess.setCookie('name4', 'value4')
 
-console.log('cookie----------', CookieProcess.getAllCookie())
+// console.log('cookie----------', CookieProcess.getAllCookie())
