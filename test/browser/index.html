@@ -26,6 +26,7 @@
             '../src/index.ts': window['vveRjyrUtils']
         };
         var require = function(path) {
+            if (path === 'jsdom-global') return function () {}
             return libs[path];
         }
     </script>
