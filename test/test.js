@@ -46,14 +46,14 @@ describe('单元测试', function () {
   });
   // 测试 cookie
   describe('测试 cookie', function () {
-    it('删除全部 cookie ', function() {
+    beforeEach(function(done) {
       let obj = getCookie()
       if(obj) {
         for(name in obj) {
           removeCookie(name)
         }
       }
-      expect(JSON.stringify(getCookie())).to.equal(JSON.stringify({}))
+      done()
     })
     it(' 设置cookie ', function () {
       setCookie('name', 'cookie')
@@ -63,13 +63,9 @@ describe('单元测试', function () {
       setCookie('name2', 'cookie2')
       expect(getCookie('name2')).to.equal('cookie2')
     })
-    it(' 获取 单个 cookie ', function () {
-      expect(getCookie('name2')).to.equal('cookie2')
-    })
-    it('获取全部 cookie ', function() {
-      expect(JSON.stringify(getCookie())).to.equal(JSON.stringify({name: "cookie", name2: "cookie2"}))
-    })
     it('删除 cookie ', function() {
+      setCookie('name', 'cookie')
+      setCookie('name2', 'cookie2')
       removeCookie('name2')
       expect(JSON.stringify(getCookie())).to.equal(JSON.stringify({name: "cookie"}))
     })
