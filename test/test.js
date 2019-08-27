@@ -46,6 +46,15 @@ describe('单元测试', function () {
   });
   // 测试 cookie
   describe('测试 cookie', function () {
+    it('删除全部 cookie ', function() {
+      let obj = getCookie()
+      if(obj) {
+        for(name in obj) {
+          removeCookie(name)
+        }
+      }
+      expect(JSON.stringify(getCookie())).to.equal(JSON.stringify({}))
+    })
     it(' 设置cookie ', function () {
       setCookie('name', 'cookie')
       expect(getCookie('name')).to.equal('cookie')
