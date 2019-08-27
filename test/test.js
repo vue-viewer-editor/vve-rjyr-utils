@@ -54,6 +54,9 @@ describe('单元测试', function () {
       setCookie('name2', 'cookie2')
       expect(getCookie('name2')).to.equal('cookie2')
     })
+    it(' 获取 单个 cookie ', function () {
+      expect(getCookie('name2')).to.equal('cookie2')
+    })
     it('获取全部 cookie ', function() {
       expect(JSON.stringify(getCookie())).to.equal(JSON.stringify({name: "cookie", name2: "cookie2"}))
     })
